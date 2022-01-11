@@ -1,5 +1,24 @@
 \begin{frame}{\playfairblack First attempt}
   \begin{card}[RL for improving Hop count program]
-
+    \begin{itemize}
+      \item Hop count suffers from the slow rising problem
+      \item Algorithm solution exists but need a-priori knowledge of the system dynamics
+      \item Can we \emph{learn} to speed-up hop count converge?
+    \end{itemize}
   \end{card}
+  \begin{columns}[onlytextwidth, t]
+    \begin{column}{0.5\textwidth}
+      \begin{card}[Hop Count speed up with Hysteric Q-Learning]
+        \begin{itemize}
+          \item \textbf{State}: velocity of the hop count output
+          \item \textbf{Action}: delta correction: \texttt{(1, 2, 3)}
+          \item \textbf{Reward}: error from the simulated distance
+        \end{itemize}
+      \end{card}
+    \end{column}
+    \begin{column}{0.29\textwidth}
+      \cardImg{img/760.pdf}{\textwidth}
+    \end{column}
+  \end{columns}
+  
 \end{frame}
